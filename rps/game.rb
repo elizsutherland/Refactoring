@@ -2,16 +2,15 @@ class Game
   @hand = ["rock","paper","scissors"]
 
   def ask_player_which_move
-    prints "Your move! Choose #{@hand} Q to quit"
+    puts "Your move! Choose Rock, Paper, Scissors AND SHOOT! Q to quit"
     player_answer = gets.chomp
-    @hands.find { |hand| hand.name == player_answer }
+    #@hands.find { |hand| hand.name == player_answer }
   end
 
-  def list_out_move
-    @hands.each do |hand|
-      puts hand.name
-    end
-  end
+  #def list_out_move
+   # @hands.each do |hand|
+    #  puts hand.name
+   # end
 
 end
 
