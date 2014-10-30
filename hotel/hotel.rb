@@ -7,4 +7,8 @@ class Hotel
     @doubles = row["Number of Doubles"]
   end
   attr_reader :name, :phone, :city
+
+  def totals_rooms
+    puts(@singles + @doubles)
+  end
 end
